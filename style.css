@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body {
+    position: relative;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: cursive;
+    background: #e2dddd;
+}
+.container {
+    position: relative;
+}
+ .canvas {
+    position: relative;
+    min-width: 800px;
+    min-height: 600px;
+    background: #f1f1f1;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.controls {
+    position: relative;
+    bottom: 30px;
+    left: 350px;
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s linear;
+}
+.controls label {
+   font-size: 16px;
+   display: none;
+}
+.controls i {
+    font-size: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+.controls i:hover {
+    transform: translateY(-3px)
+}
+.controls input[type=color] {
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.controls input[type=color]::-webkit-color-swatch {
+    border-radius: 50%;
+}
+.controls #pen-size {
+    -webkit-appearance: none;
+    background: #000;
+    border: none;
+    outline: none;
+    width: 100px;
+    display: none;
+    height: 2px;
+}
+.controls #pen-size::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #000;
+    border-radius: 0 50% 0 50%;
+}
+.controls a {
+    text-decoration: none;
+    color: #000;
+    background: #f1f1f1;
+    padding: 10px 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: none
+}
+.controls.active {
+    bottom: 100px;
+    left: 0;
+    width: 800px;
+    height: 100px;
+    border-radius: 0 0 30px 30px;
+}
+.controls label.active {
+    display: block
+}
+.controls input[type=color].active {
+    display: block;
+}
+.controls #pen-size.active {
+    display: block
+}
+.controls a.active {
+    display: block
+}

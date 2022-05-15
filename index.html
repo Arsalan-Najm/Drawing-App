@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <title>Drawing App</title>
+</head>
+<body>
+    <div class="container">
+        <canvas class="canvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <i class="bx bx-edit" title="settings"></i>
+            <label for="pen-color">Pen Color</label>
+            <input type="color" id="pen-color">
+            <label for="bg-color">Canvas Color</label>
+            <input type="color" id="bg-color" value="#f1f1f1">
+            <label for="pen-size">Pen Size</label>
+            <input type="range" min="1" max="10" value="0" id="pen-size">
+            <a href="index.html" class="cleat-btn">Clear Canvas</a>
+            <a href="#" class="print-btn">Print</a>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
